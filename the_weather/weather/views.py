@@ -4,8 +4,17 @@ from .models import City
 from .forms import CityForm
 
 def index(request):
+<<<<<<< HEAD
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=YOUR_API_KEY'
 
+=======
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=23136a53b8cc53c0b96b95427d52256e'
+    # city = "London"
+    # r = requests.get(url.format(city)).json()
+    # print(r)
+    # context = {}
+    #
+>>>>>>> first commit
     if request.method == 'POST':
         form = CityForm(request.POST)
         form.save()
